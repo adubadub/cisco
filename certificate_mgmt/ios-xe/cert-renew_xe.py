@@ -57,6 +57,10 @@ if True: # define get cert 'valid to' date function
                 if "end" in i and "date" in i:
                     valid_to.append(i)
             
+            # handle trustpoint with multiple host certs created
+            while len(valid_to) > 1:
+                valid_to.pop()
+
             v_str = str(valid_to).strip('[]').strip("'")
             v_str = v_str.replace(":", "")
             v_list = v_str.split()
