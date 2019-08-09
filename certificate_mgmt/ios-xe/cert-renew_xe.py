@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 if True: # imports    
-    import io
+    import io ##
     import os
     import sys
     from netmiko import Netmiko, ConnectHandler
