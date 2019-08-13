@@ -10,7 +10,7 @@ if True: # imports
     import time
     import json
 if True: # set json variables
-    with open('cert-renew_xe_test.json') as f:
+    with open('cert-renew_ios.json') as f:
         js = json.load(f)
         device_ip           = js['DEVICE_IP']
         device_username     = js['DEVICE_UN']
